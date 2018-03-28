@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqgis.extensions.aspnetcore.ssl", "cqgis.extensions.aspnetcore.ssl\cqgis.extensions.aspnetcore.ssl.csproj", "{168E91AF-307C-484B-BD10-6B393A897B41}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{229DD20C-2576-4C4D-ABA8-1832FBAC8BE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ssl.test", "tests\ssl.test\ssl.test.csproj", "{C2F66799-348B-4F2A-BBE7-0FC7529F9AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapisample", "webapisample\webapisample.csproj", "{7C14F27B-81F3-4BE4-9BB6-295BEFCE145D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cqgis.extensions.ssl", "cqgis.extensions.ssl\cqgis.extensions.ssl.csproj", "{837E3C4A-0CE4-40D1-B3EC-3AF8D4AFB011}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +23,24 @@ Global
 		{168E91AF-307C-484B-BD10-6B393A897B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{168E91AF-307C-484B-BD10-6B393A897B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{168E91AF-307C-484B-BD10-6B393A897B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F66799-348B-4F2A-BBE7-0FC7529F9AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F66799-348B-4F2A-BBE7-0FC7529F9AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F66799-348B-4F2A-BBE7-0FC7529F9AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F66799-348B-4F2A-BBE7-0FC7529F9AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C14F27B-81F3-4BE4-9BB6-295BEFCE145D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C14F27B-81F3-4BE4-9BB6-295BEFCE145D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C14F27B-81F3-4BE4-9BB6-295BEFCE145D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C14F27B-81F3-4BE4-9BB6-295BEFCE145D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837E3C4A-0CE4-40D1-B3EC-3AF8D4AFB011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837E3C4A-0CE4-40D1-B3EC-3AF8D4AFB011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837E3C4A-0CE4-40D1-B3EC-3AF8D4AFB011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837E3C4A-0CE4-40D1-B3EC-3AF8D4AFB011}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2F66799-348B-4F2A-BBE7-0FC7529F9AF4} = {229DD20C-2576-4C4D-ABA8-1832FBAC8BE1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EFAE2F6-6DBA-4CBB-ADB2-16F5E20CDC95}
