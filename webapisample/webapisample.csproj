@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="cqgis.extensions" Version="3.0.1803.2001" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
   </ItemGroup>
 
   <ItemGroup>

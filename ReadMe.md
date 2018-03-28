@@ -1,5 +1,8 @@
 ﻿# 说明
 本扩展是在webapi中使用RSA加密的扩展
+
+![TFS Build](https://cqgis.visualstudio.com/_apis/public/build/definitions/8b214f0e-c703-40ab-b972-7a347c6b7c9c/19/badge)
+
 ## 加密
 
 本程序中涉及到两种类别的加密：非对称加密、对称加密。
