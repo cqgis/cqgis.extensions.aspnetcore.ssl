@@ -7,6 +7,46 @@
 
 [cqgis.extensions.ssl](https://www.nuget.org/packages/cqgis.extensions.ssl)
 
+## 生成公/私钥
+
+采用openssl 命令生成私钥和公钥
+
+私钥：
++ 命令：` openssl genrsa -out rsa_1024_priv.pem 1024 `
++ 生成的内容：
+    ```
+    -----BEGIN RSA PRIVATE KEY-----
+    MIICXAIBAAKBgQDJQrluPaAoXlzM19vT/EPAyM7p6wD3rNumGbBFKA10GvffVwrX
+    B0H++BXRbEjPQAK1dzWo+50LoDu1ctXZWDeDP24gp+s7Kg1ZKU21mXSJkXNd3PvA
+    gi6KUicHorJiVqSseFlZ6XbhD42bmxQ5vqjlLrVTTomCgdYEB/rVYyJXywIDAQAB
+    AoGBAIJNp/6++XWJeq3JR/NczYUAvi5mz46LpP5KfXyY7PTyDO/VzBfiBBGPD5ky
+    cYV1XQueLejFVy1SxbW5rsj0O6OfnYUsl1SvLfRtNen6mcQwKbmZVbxNLiIDIden
+    K5SJXk6be+2l5UaLxezutwidniGKkrucjeSPgtPs9MgqIKwhAkEA/CzHiGx/Uakb
+    gBdS358jWLDIhn3AJ7Yj/PgPRDt7rfB0ZzGfx79O9r6xTRkRMyEVWyVduT0M2w3G
+    xoMXpxVKsQJBAMxQPVnYqKf+kdS17dI0J2jBdmw44sQ4RTbXv2oSN/n5S3D3mTPw
+    LDSxAoS9YAkfKbBEB1+tbrkJY/kOuvvicTsCQGLIB8Fg/t62J5edi1EdvXLYjTRh
+    vgvQRXiqkxBfXKteLbrerYBJaF0vhbR1xU8J/pudn4EYcRi95MeOQo2owYECQEPr
+    7OlggHkQxTQ8ouo9klhd8Ft78c8fkcrwoF7H3boJaU4N0e2VS2zc56RvPGzr4jUJ
+    +JWTF3sGJykV/41bMx8CQBZjCwRPea4ZDn3voDIF4EBWQoA5/wuSArzQoLyPATTq
+    U59ILZRWpeY7EQE59fAs3S0Ae+MAO8Emx+4rNDbqb5A=
+    -----END RSA PRIVATE KEY-----
+
+    ```
+
+公钥：
++ 命令：`openssl rsa -pubout -in rsa_1024_priv.pem -out rsa_1024_pub.pem `
++ 生成的内容：
+    ```
+    -----BEGIN PUBLIC KEY-----
+    MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJQrluPaAoXlzM19vT/EPAyM7p
+    6wD3rNumGbBFKA10GvffVwrXB0H++BXRbEjPQAK1dzWo+50LoDu1ctXZWDeDP24g
+    p+s7Kg1ZKU21mXSJkXNd3PvAgi6KUicHorJiVqSseFlZ6XbhD42bmxQ5vqjlLrVT
+    TomCgdYEB/rVYyJXywIDAQAB
+    -----END PUBLIC KEY-----
+
+    ```
+
+
 ## 加密
 
 本程序中涉及到两种类别的加密：非对称加密、对称加密。
